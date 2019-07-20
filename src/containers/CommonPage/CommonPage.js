@@ -5,10 +5,7 @@ import Description from '../../components/Description/Description';
 import data from '../../data/people';
 import {Link} from 'react-router-dom';
 
-function CommonPage() { 
-  const onButtonClick = (event) => {
-    console.log(event.target.id);
-  }
+function CommonPage(props) { 
   
   return (
     data.map((item, index) => {
@@ -21,7 +18,7 @@ function CommonPage() {
             <Link to="/personalpage"  
                   className="read-more-button"
                   id={index}
-                  onClick = {onButtonClick}>
+                  onClick={props.onButtonClick}>
                   Узнать больше
             </Link>        
           </div>
