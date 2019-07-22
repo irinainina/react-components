@@ -27,7 +27,7 @@ export default class SearchPanel extends Component {
                  value={this.state.term}
                  onChange={ this.onTermChange } />
         </label>
-        <button className="btn-search type="submit">Найти</button>
+        <button className="btn-search" type="submit">Найти</button>
         </form>
       </div>
     );
